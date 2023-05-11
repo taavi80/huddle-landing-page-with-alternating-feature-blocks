@@ -83,7 +83,8 @@
       .hero p {
         margin: 1rem 0 3rem 0;
       }
-      .hero > a {
+      .hero > a,
+      .card:last-child a {
         display: block;
         width: 50%;
         background-color: var(--Pink);
@@ -118,6 +119,14 @@
       .card p {
         font-size: 1rem;
       }
+      .card:last-child {
+        background-color: #fff;
+        position: relative;
+        inset: 5rem 0 0 0;
+      }
+      .card:last-child h2 {
+        font-size: 1rem;
+      }
 
       .bottom-wrapper {
         background-color: var(--Very-Dark-Cyan);
@@ -125,6 +134,55 @@
         display: flex;
       }
       .bottom {
+        margin-top: 9rem;
+      }
+      .bottom .contact > img {
+        width: 160px;
+      }
+      .bottom .contact {
+        margin-bottom: 2rem;
+      }
+      .bottom .contact div {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .contact .location img {
+        position: relative;
+        top: 5px;
+        align-self: baseline;
+      }
+      .contact .location p {
+        align-self: baseline;
+      }
+
+      .bottom .links {
+        margin-bottom: 3rem;
+      }
+      .bottom .links a {
+        display: block;
+        text-decoration: none;
+        color: var(--Very-Pale-Cyan);
+        margin-bottom: 1rem;
+      }
+
+      .bottom .social {
+        text-align: center;
+      }
+      .bottom .social a {
+        text-decoration: none;
+      }
+      .bottom .social svg {
+        width: 16px;
+        aspect-ratio: 1;
+        fill: #fff;
+        padding: 0.3rem;
+        border: 1px solid var(--Very-Pale-Cyan);
+        border-radius: 50%;
+      }
+      .social div {
+        font-size: 0.7rem;
+        margin: 2rem 0;
       }
     </style>
   </head>
@@ -194,7 +252,7 @@
         <div class="bottom">
           <div class="contact">
             <img src="images/logo2.svg" alt="" />
-            <div>
+            <div class="location">
               <img src="images/icon-location.svg" alt="" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -248,13 +306,16 @@
                 />
               </svg>
             </a>
+            <div>
+              <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <!--     
-           What We Do
-    FAQ Career Blog Contact Us &copy; Copyright 2018 Huddle. All rights
+           
+   &copy; Copyright 2018 Huddle. All rights
     reserved. -->
   </body>
 </html>
