@@ -20,195 +20,40 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --Pink: hsl(322, 100%, 66%);
-        --Very-Pale-Cyan: hsl(193, 100%, 96%);
-        --Very-Dark-Cyan: hsl(192, 100%, 9%);
-        --Grayish-Blue: hsl(208, 11%, 55%);
-      }
-
-      body {
-        font-family: "Open Sans", sans-serif;
-        font-size: 18px;
-        margin: 0;
-      }
-      h1,
-      h2 {
-        color: var(--Very-Dark-Cyan);
-        font-family: "Poppins", sans-serif;
-      }
-      img {
-        max-width: 100%;
-      }
-
-      .hero,
-      .cards-wrapper,
-      .bottom {
-        max-width: 375px;
-        padding: 0 1rem;
-        margin: auto;
-      }
-
-      .hero-wrapper {
-        background-color: var(--Very-Pale-Cyan);
-        background-image: url("images/bg-hero-mobile.svg");
-        background-repeat: none;
-        text-align: center;
-      }
-      .hero > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem;
-      }
-      .hero div img {
-        width: 100px;
-      }
-      .hero div a {
-        background-color: #fff;
-        text-decoration: none;
-        color: var(--Very-Dark-Cyan);
-        font-size: 0.9rem;
-        font-weight: 700;
-        padding: 0.3rem 1.3rem;
-        border-radius: 25px;
-        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
-      }
-      .hero h1 {
-        max-width: 300px;
-        font-size: 1.6rem;
-        margin: auto;
-      }
-      .hero p {
-        margin: 1rem 0 3rem 0;
-      }
-      .hero > a,
-      .card:last-child a {
-        display: block;
-        width: 50%;
-        background-color: var(--Pink);
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.9rem;
-        padding: 0.9rem 3rem;
-        border-radius: 25px;
-        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.3);
-        margin: 0 auto;
-      }
-      .hero img {
-        margin: 3rem 0;
-      }
-
-      .card {
-        color: var(--Grayish-Blue);
-        text-align: center;
-        padding: 1.6rem;
-        border-radius: 15px;
-        box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.3);
-        margin: 2rem 0;
-      }
-      .card img {
-        display: block;
-        width: 90%;
-        margin: 3rem auto;
-      }
-      .card h2 {
-        font-size: 1.3rem;
-      }
-      .card p {
-        font-size: 1rem;
-      }
-      .card:last-child {
-        background-color: #fff;
-        position: relative;
-        inset: 5rem 0 0 0;
-      }
-      .card:last-child h2 {
-        font-size: 1rem;
-      }
-
-      .bottom-wrapper {
-        background-color: var(--Very-Dark-Cyan);
-        color: var(--Very-Pale-Cyan);
-        display: flex;
-      }
-      .bottom {
-        margin-top: 9rem;
-      }
-      .bottom .contact > img {
-        width: 160px;
-      }
-      .bottom .contact {
-        margin-bottom: 2rem;
-      }
-      .bottom .contact div {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-      }
-      .contact .location img {
-        position: relative;
-        top: 5px;
-        align-self: baseline;
-      }
-      .contact .location p {
-        align-self: baseline;
-      }
-
-      .bottom .links {
-        margin-bottom: 3rem;
-      }
-      .bottom .links a {
-        display: block;
-        text-decoration: none;
-        color: var(--Very-Pale-Cyan);
-        margin-bottom: 1rem;
-      }
-
-      .bottom .social {
-        text-align: center;
-      }
-      .bottom .social a {
-        text-decoration: none;
-      }
-      .bottom .social svg {
-        width: 16px;
-        aspect-ratio: 1;
-        fill: #fff;
-        padding: 0.3rem;
-        border: 1px solid var(--Very-Pale-Cyan);
-        border-radius: 50%;
-      }
-      .social div {
-        font-size: 0.7rem;
-        margin: 2rem 0;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
-      <div class="hero-wrapper">
-        <div class="hero">
+      <div class="hero">
+        <div class="hero-wrapper">
           <div>
             <img src="images/logo.svg" alt="" />
             <a href="#signup" aria-label="link to signup page">Try It Free</a>
           </div>
-          <h1>Build The Community Your Fans Will Love</h1>
-          <p>
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as you
-            engage in genuine discussion.
-          </p>
-          <a href="#signup" aria-label="link to signup page">
-            Get Started For Free</a
-          >
-          <img src="images/illustration-mockups.svg" alt="" />
+
+          <div class="hero-wrapper-bottom">
+            <div>
+              <h1>Build The Community Your Fans Will Love</h1>
+              <p>
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </p>
+              <a href="#signup" aria-label="link to signup page">
+                Get Started For Free</a
+              >
+            </div>
+            <div>
+              <img src="images/illustration-mockups.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="cards-wrapper">
         <div class="card">
-          <img src="images/illustration-grow-together.svg" alt="" />
+          <div>
+            <img src="images/illustration-grow-together.svg" alt="" />
+          </div>
           <div>
             <h2>Grow Together</h2>
 
@@ -220,7 +65,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="images/illustration-flowing-conversation.svg" alt="" />
+          <div>
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+          </div>
           <div>
             <h2>Flowing Conversations</h2>
             <p>
@@ -231,7 +78,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="images/illustration-your-users.svg" alt="" />
+          <div>
+            <img src="images/illustration-your-users.svg" alt="" />
+          </div>
           <div>
             <h2>Your Users</h2>
             <p>
@@ -248,8 +97,8 @@
           >
         </div>
       </div>
-      <div class="bottom-wrapper">
-        <div class="bottom">
+      <div class="bottom">
+        <div class="bottom-wrapper">
           <div class="contact">
             <img src="images/logo2.svg" alt="" />
             <div class="location">
@@ -269,16 +118,24 @@
             </div>
           </div>
           <div class="links">
-            <a href="#about" aria-label="link to about us page">About Us</a>
-            <a href="#wedo" aria-label="link to what we do page">What We Do</a>
-            <a href="#faq" aria-label="link to frequently asked questions page"
-              >FAQ</a
-            >
-            <a href="#career" aria-label="link to career page">Career</a>
-            <a href="#blog" aria-label="link to blog page">Blog</a>
-            <a href="#contact" aria-label="link to contact us page"
-              >Contact Us</a
-            >
+            <div>
+              <a href="#about" aria-label="link to about us page">About Us</a>
+              <a href="#wedo" aria-label="link to what we do page"
+                >What We Do</a
+              >
+              <a
+                href="#faq"
+                aria-label="link to frequently asked questions page"
+                >FAQ</a
+              >
+            </div>
+            <div>
+              <a href="#career" aria-label="link to career page">Career</a>
+              <a href="#blog" aria-label="link to blog page">Blog</a>
+              <a href="#contact" aria-label="link to contact us page"
+                >Contact Us</a
+              >
+            </div>
           </div>
           <div class="social">
             <a
@@ -313,9 +170,5 @@
         </div>
       </div>
     </main>
-    <!--     
-           
-   &copy; Copyright 2018 Huddle. All rights
-    reserved. -->
   </body>
 </html>
