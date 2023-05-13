@@ -4,7 +4,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Screenshot
 
-![](design/huddle-landing-page-with-alternating-feature-blocks_desktop-design.png)
+![](design/huddle-landing-page-with-alternating-feature-blocks_deskdop-design.png)
 
 
 ### Links
